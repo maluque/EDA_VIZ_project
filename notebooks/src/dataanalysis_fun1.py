@@ -3,6 +3,20 @@ import pylab as plt
 import seaborn as sns
 from unidecode import unidecode
 
+## ACCESS TO LOGS
+file_path = "../notebooks/temp/logs/PASSES.py"
+# Create an empty namespace (dictionary) to store variables
+namespace = {}
+# Execute the Python file and populate the namespace
+with open(file_path, "r") as reader:
+    exec(reader.read(), namespace)
+
+# Access the imported variable
+SQL = namespace.get("SQL")
+len(SQL)
+
+
+
 def na_abs(df, ascend=False):
     df1 = df.isna().sum()
     df1=df1[df1!=0].sort_values(ascending = ascend)
