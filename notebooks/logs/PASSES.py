@@ -1,6 +1,0 @@
-GITtok="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"
-AEMET="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpbmEubHVxdWVndkBnbWFpbC5jb20iLCJqdGkiOiJjMjQzMWFiOC1iNmQyLTQwZDMtYjM4MC0wYzliNjNkMTA3NTYiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTY5ODkzMDkyMCwidXNlcklkIjoiYzI0MzFhYjgtYjZkMi00MGQzLWIzODAtMGM5YjYzZDEwNzU2Iiwicm9sZSI6IiJ9.yaWz1EVcMdDLi71g2J6TAm0CnEaeVPWBwhrZXTHC1uA"
-SQL="marina"
-RAPID= "3ffd2851bcmsh1dfe73eb39268e0p168a06jsn8a9c6bf94445"
-ETSY= "hvjg68i8jeyxxin0fk8hyyf0" # name:  Marinas_project # shared secret: "dcspa4juc4"
-
