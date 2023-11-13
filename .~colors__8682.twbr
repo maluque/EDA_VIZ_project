@@ -1,0 +1,2707 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.21.0110.1657                               -->
+<workbook source-build='2020.3.5 (20203.21.0110.1657)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customer_df.csv (Multiple Connections)' inline='true' name='federated.1o2ecnr1vbpx9d14fny6n0yw3r34' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer_df' name='textscan.193smam1url2gw1daqjzp01w7lrk'>
+            <connection class='textscan' directory='/Users/Marina/AMAYA_UBUNTU/PY_PROJECTS/IRONHACK/PROJECTS/EDA_VIZ_project/data/clean' filename='customer_df.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='product_simple' name='textscan.0kriqs801d92c219olzi10jpkmgq'>
+            <connection class='textscan' directory='/Users/Marina/AMAYA_UBUNTU/PY_PROJECTS/IRONHACK/PROJECTS/EDA_VIZ_project/data/clean' filename='product_simple.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='sale_df' name='textscan.0w63nzc1wwdhkw15vncfx120os11'>
+            <connection class='textscan' directory='/Users/Marina/AMAYA_UBUNTU/PY_PROJECTS/IRONHACK/PROJECTS/EDA_VIZ_project/data/clean' filename='sale_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.193smam1url2gw1daqjzp01w7lrk' name='customer_df.csv' table='[customer_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='customer_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='location' ordinal='3' />
+            <column datatype='string' name='horoscope' ordinal='4' />
+            <column datatype='string' name='blood' ordinal='5' />
+            <column datatype='string' name='catdog' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.193smam1url2gw1daqjzp01w7lrk' name='customer_df.csv' table='[customer_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='customer_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='location' ordinal='3' />
+            <column datatype='string' name='horoscope' ordinal='4' />
+            <column datatype='string' name='blood' ordinal='5' />
+            <column datatype='string' name='catdog' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>horoscope</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[horoscope]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>horoscope</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[blood]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>blood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>catdog</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[catdog]</local-name>
+            <parent-name>[customer_df.csv]</parent-name>
+            <remote-alias>catdog</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='customer_df.csv' datatype='table' name='[__tableau_internal_object_id__].[customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Blood' datatype='string' name='[blood]' role='dimension' type='nominal' />
+      <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='customer_df.csv' id='customer_df.csv_B9D45D3AF49949559952A0BDB169D6D8'>
+            <properties context=''>
+              <relation connection='textscan.193smam1url2gw1daqjzp01w7lrk' name='customer_df.csv' table='[customer_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='customer_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='string' name='location' ordinal='3' />
+                  <column datatype='string' name='horoscope' ordinal='4' />
+                  <column datatype='string' name='blood' ordinal='5' />
+                  <column datatype='string' name='catdog' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='customer+ (color)' inline='true' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='color' name='excel-direct.0pdhz4s18poesq13jb96j12aorlo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/Marina/AMAYA_UBUNTU/PY_PROJECTS/IRONHACK/PROJECTS/EDA_VIZ_project/data/clean/color.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='customer' table='[customer$]' type='table'>
+          <columns gridOrigin='A1:G3901:no:A1:G3901:0' header='yes' outcome='6'>
+            <column datatype='integer' name='customer_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='location' ordinal='3' />
+            <column datatype='string' name='horoscope' ordinal='4' />
+            <column datatype='string' name='blood' ordinal='5' />
+            <column datatype='string' name='catdog' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='customer' table='[customer$]' type='table'>
+            <columns gridOrigin='A1:G3901:no:A1:G3901:0' header='yes' outcome='6'>
+              <column datatype='integer' name='customer_id' ordinal='0' />
+              <column datatype='integer' name='age' ordinal='1' />
+              <column datatype='string' name='gender' ordinal='2' />
+              <column datatype='string' name='location' ordinal='3' />
+              <column datatype='string' name='horoscope' ordinal='4' />
+              <column datatype='string' name='blood' ordinal='5' />
+              <column datatype='string' name='catdog' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='sale' table='[sale$]' type='table'>
+            <columns gridOrigin='A1:E3901:no:A1:E3901:0' header='yes' outcome='6'>
+              <column datatype='integer' name='customer_customer_id' ordinal='0' />
+              <column datatype='string' name='payment_method' ordinal='1' />
+              <column datatype='real' name='review_rating' ordinal='2' />
+              <column datatype='string' name='season' ordinal='3' />
+              <column datatype='integer' name='product_product_id' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='product' table='[product$]' type='table'>
+            <columns gridOrigin='A1:F25185:no:A1:F25185:0' header='yes' outcome='6'>
+              <column datatype='string' name='brand' ordinal='0' />
+              <column datatype='string' name='colour' ordinal='1' />
+              <column datatype='string' name='shop' ordinal='2' />
+              <column datatype='integer' name='product_id' ordinal='3' />
+              <column datatype='string' name='type' ordinal='4' />
+              <column datatype='real' name='price_pack' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G3901:no:A1:G3901:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sale]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E3901:no:A1:E3901:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[product]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F25185:no:A1:F25185:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>horoscope</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[horoscope]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>horoscope</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blood</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[blood]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>blood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>catdog</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[catdog]</local-name>
+            <parent-name>[customer]</parent-name>
+            <remote-alias>catdog</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_046F916D72C04EEAA6084AFE7E6077E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_customer_id]</local-name>
+            <parent-name>[sale]</parent-name>
+            <remote-alias>customer_customer_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sale_0E6C56B8BAED49998BB376A2EFEDF915]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_method</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[payment_method]</local-name>
+            <parent-name>[sale]</parent-name>
+            <remote-alias>payment_method</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sale_0E6C56B8BAED49998BB376A2EFEDF915]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_rating]</local-name>
+            <parent-name>[sale]</parent-name>
+            <remote-alias>review_rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sale_0E6C56B8BAED49998BB376A2EFEDF915]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[sale]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sale_0E6C56B8BAED49998BB376A2EFEDF915]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_product_id]</local-name>
+            <parent-name>[sale]</parent-name>
+            <remote-alias>product_product_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sale_0E6C56B8BAED49998BB376A2EFEDF915]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>colour</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[colour]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>colour</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[shop]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>shop</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_pack</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_pack]</local-name>
+            <parent-name>[product]</parent-name>
+            <remote-alias>price_pack</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[product_77AE717F8960428EB39368D4A5BF3D98]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='customer' datatype='table' name='[__tableau_internal_object_id__].[customer_046F916D72C04EEAA6084AFE7E6077E9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='product' datatype='table' name='[__tableau_internal_object_id__].[product_77AE717F8960428EB39368D4A5BF3D98]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sale' datatype='table' name='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Blood' datatype='string' name='[blood]' role='dimension' type='nominal' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+      <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+      <column caption='Customer Customer Id' datatype='integer' name='[customer_customer_id]' role='dimension' type='ordinal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[payment_method]' role='dimension' type='nominal' />
+      <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+      <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+      <column caption='Product Product Id' datatype='integer' name='[product_product_id]' role='dimension' type='ordinal' />
+      <column caption='Review Rating' datatype='real' name='[review_rating]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Shop' datatype='string' name='[shop]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+      <column-instance column='[horoscope]' derivation='None' name='[none:horoscope:nk]' pivot='key' type='nominal' />
+      <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:season:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fall&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Spring&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:colour:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;turquesa&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;azul&quot;</bucket>
+            </map>
+            <map to='#49525e'>
+              <bucket>&quot;negro&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;verde&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;plateado&quot;</bucket>
+            </map>
+            <map to='#9ca3a4'>
+              <bucket>&quot;gris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;marron&quot;</bucket>
+            </map>
+            <map to='#9f8f12'>
+              <bucket>&quot;multicolor&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;morado&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;beis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;rojo&quot;</bucket>
+            </map>
+            <map to='#eedbbd'>
+              <bucket>&quot;blanco&quot;</bucket>
+            </map>
+            <map to='#eedbbd'>
+              <bucket>&quot;marfil&quot;</bucket>
+            </map>
+            <map to='#f0bd27'>
+              <bucket>&quot;dorado&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;naranja&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;rosa&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;amarillo&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;pantalones&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;camisa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;chaqueta&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;top&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;falda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;camiseta&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;lenceria&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;vestido&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mallas&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;casacas sanitarias&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;chaleco&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:horoscope:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Sagittarius&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aquarius&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gemini&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Scorpio&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Leo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aries&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Libra&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Taurus&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Pisces&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cancer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Virgo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Capricorn&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='customer' id='customer_046F916D72C04EEAA6084AFE7E6077E9'>
+            <properties context=''>
+              <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='customer' table='[customer$]' type='table'>
+                <columns gridOrigin='A1:G3901:no:A1:G3901:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='customer_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='string' name='location' ordinal='3' />
+                  <column datatype='string' name='horoscope' ordinal='4' />
+                  <column datatype='string' name='blood' ordinal='5' />
+                  <column datatype='string' name='catdog' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='product' id='product_77AE717F8960428EB39368D4A5BF3D98'>
+            <properties context=''>
+              <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='product' table='[product$]' type='table'>
+                <columns gridOrigin='A1:F25185:no:A1:F25185:0' header='yes' outcome='6'>
+                  <column datatype='string' name='brand' ordinal='0' />
+                  <column datatype='string' name='colour' ordinal='1' />
+                  <column datatype='string' name='shop' ordinal='2' />
+                  <column datatype='integer' name='product_id' ordinal='3' />
+                  <column datatype='string' name='type' ordinal='4' />
+                  <column datatype='real' name='price_pack' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='sale' id='sale_0E6C56B8BAED49998BB376A2EFEDF915'>
+            <properties context=''>
+              <relation connection='excel-direct.0pdhz4s18poesq13jb96j12aorlo' name='sale' table='[sale$]' type='table'>
+                <columns gridOrigin='A1:E3901:no:A1:E3901:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='customer_customer_id' ordinal='0' />
+                  <column datatype='string' name='payment_method' ordinal='1' />
+                  <column datatype='real' name='review_rating' ordinal='2' />
+                  <column datatype='string' name='season' ordinal='3' />
+                  <column datatype='integer' name='product_product_id' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[product_product_id]' />
+              <expression op='[product_id]' />
+            </expression>
+            <first-end-point object-id='sale_0E6C56B8BAED49998BB376A2EFEDF915' />
+            <second-end-point object-id='product_77AE717F8960428EB39368D4A5BF3D98' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_id]' />
+              <expression op='[customer_customer_id]' />
+            </expression>
+            <first-end-point object-id='customer_046F916D72C04EEAA6084AFE7E6077E9' />
+            <second-end-point object-id='sale_0E6C56B8BAED49998BB376A2EFEDF915' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;amarillo&quot;' function='range' level='[none:colour:nk]' to='&quot;blanco&quot;' />
+              <groupfilter from='&quot;gris&quot;' function='range' level='[none:colour:nk]' to='&quot;negro&quot;' />
+              <groupfilter from='&quot;rojo&quot;' function='range' level='[none:colour:nk]' to='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;alava&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;albacete&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;alicante&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;almeria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;asturias&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;avila&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;badajoz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;baleares&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;barcelona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;bizkaia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;burgos&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;caceres&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cadiz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cantabria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;castellon&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;ciudad_real&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cordoba&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cuenca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gerona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gipuzkoa&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;granada&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;guadalajara&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;huelva&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;huesca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;jaen&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;la_coruna&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;la_rioja&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;las_palmas&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;leon&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;lleida&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;lugo&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;madrid&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;malaga&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;murcia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;navarra&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;orense&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;palencia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;pontevedra&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;salamanca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;santa_cruz_de_tenerife&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;segovia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;sevilla&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;soria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;tarragona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;teruel&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;toledo&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;valencia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;valladolid&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;zamora&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;zaragoza&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{DAE6CB3E-C4C5-4C0F-AA11-F68F0F568BF2}' />
+    </worksheet>
+    <worksheet name='andalucia'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <_.fcp.ObjectModelTableType.false...column caption='sale' datatype='integer' name='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='sale' datatype='table' name='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' role='measure' type='quantitative' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;azul&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;gris&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;marron&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;negro&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rosa&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cadiz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cordoba&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;granada&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;jaen&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;malaga&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;sevilla&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' member-value='&quot;negro&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' value='32' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+              <size column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</cols>
+      </table>
+      <simple-id uuid='{CBDB63E0-D57C-4B36-BDE3-831CBC80A10A}' />
+    </worksheet>
+    <worksheet name='brand'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[horoscope]' derivation='None' name='[none:horoscope:nk]' pivot='key' type='nominal' />
+            <column caption='Review Rating' datatype='real' name='[review_rating]' role='measure' type='quantitative' />
+            <column-instance column='[review_rating]' derivation='Sum' name='[sum:review_rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Allegra K&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;ASOS DESIGN&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Esprit&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Influence&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Miss Selfridge&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;NUSGEAR&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Only&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Pieces&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Topshop&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;VEMOW&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Vero Moda&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]'>
+            <groupfilter from='&quot;Aquarius&quot;' function='range' level='[none:horoscope:nk]' to='&quot;Virgo&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]</cols>
+      </table>
+      <simple-id uuid='{C48A0257-3F45-44E1-92E1-F305084E5B13}' />
+    </worksheet>
+    <worksheet name='brand_blood'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Blood' datatype='string' name='[blood]' role='dimension' type='nominal' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+            <column-instance column='[blood]' derivation='None' name='[none:blood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[horoscope]' derivation='None' name='[none:horoscope:nk]' pivot='key' type='nominal' />
+            <column caption='Review Rating' datatype='real' name='[review_rating]' role='measure' type='quantitative' />
+            <column-instance column='[review_rating]' derivation='Sum' name='[sum:review_rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;ASOS DESIGN&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Tommy Hilfiger&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;VEMOW&quot;' />
+              <groupfilter function='member' level='[none:brand:nk]' member='&quot;Vero Moda&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]' direction='DESC' using='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' />
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]'>
+            <groupfilter from='&quot;Aquarius&quot;' function='range' level='[none:horoscope:nk]' to='&quot;Virgo&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:blood:nk]' />
+              <lod column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk] * [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:review_rating:qk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:blood:nk]</cols>
+      </table>
+      <simple-id uuid='{50E4A8F0-0077-4285-B5F7-C78797CA658E}' />
+    </worksheet>
+    <worksheet name='camisetas'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average T-shirt price by color</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;amarillo&quot;' function='range' level='[none:colour:nk]' to='&quot;blanco&quot;' />
+              <groupfilter from='&quot;gris&quot;' function='range' level='[none:colour:nk]' to='&quot;negro&quot;' />
+              <groupfilter from='&quot;rojo&quot;' function='range' level='[none:colour:nk]' to='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{5F7F3C6D-7F40-46EE-A922-065E6572CCB9}' />
+    </worksheet>
+    <worksheet name='cat'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Cat lovers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[catdog]' derivation='None' name='[none:catdog:nk]' pivot='key' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]'>
+            <groupfilter from='&quot;cat&quot;' function='range' level='[none:catdog:nk]' to='&quot;none&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;azul&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;multicolor&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;negro&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camisa&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;casacas sanitarias&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaleco&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaqueta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;falda&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;lenceria&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;mallas&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;pantalones&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;top&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{E367C846-078D-4261-B700-E3DF1C6C0209}' />
+    </worksheet>
+    <worksheet name='dog'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Dog lovers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[catdog]' derivation='None' name='[none:catdog:nk]' pivot='key' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]'>
+            <groupfilter from='&quot;cat&quot;' function='range' level='[none:catdog:nk]' to='&quot;none&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;gris&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;marfil&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;morado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rosa&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camisa&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;casacas sanitarias&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaleco&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaqueta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;falda&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;lenceria&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;mallas&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;pantalones&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;top&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='384' />
+                <format attr='maxwidth' value='384' />
+                <format attr='minheight' value='240' />
+                <format attr='maxheight' value='240' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{B8EAA21B-823D-4F03-9FF7-3BD7F0312D5D}' />
+    </worksheet>
+    <worksheet name='euskadi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <_.fcp.ObjectModelTableType.false...column caption='sale' datatype='integer' name='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='sale' datatype='table' name='[__tableau_internal_object_id__].[sale_0E6C56B8BAED49998BB376A2EFEDF915]' role='measure' type='quantitative' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;beis&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;dorado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;gris&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;morado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;plateado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rosa&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;turquesa&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;alava&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;bizkaia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gipuzkoa&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' direction='ASC' />
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='height' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' value='74' />
+            <format attr='width' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' value='39' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+              <size column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</cols>
+      </table>
+      <simple-id uuid='{DF6D2692-1D30-41F3-B4C3-6C66F7FA7814}' />
+    </worksheet>
+    <worksheet name='horoscope'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Color preference of Horoscope</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <_.fcp.ObjectModelTableType.false...column caption='product' datatype='integer' name='[__tableau_internal_object_id__].[product_77AE717F8960428EB39368D4A5BF3D98]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[product_77AE717F8960428EB39368D4A5BF3D98]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:product_77AE717F8960428EB39368D4A5BF3D98:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='product' datatype='table' name='[__tableau_internal_object_id__].[product_77AE717F8960428EB39368D4A5BF3D98]' role='measure' type='quantitative' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[horoscope]' derivation='None' name='[none:horoscope:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;azul&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;dorado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;gris&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;naranja&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;plateado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rojo&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rosa&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:horoscope:nk]' member='&quot;Pisces&quot;' />
+              <groupfilter function='member' level='[none:horoscope:nk]' member='&quot;Sagittarius&quot;' />
+              <groupfilter function='member' level='[none:horoscope:nk]' member='&quot;Taurus&quot;' />
+              <groupfilter function='member' level='[none:horoscope:nk]' member='&quot;Virgo&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:product_77AE717F8960428EB39368D4A5BF3D98:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' member-value='&quot;Pisces&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</rows>
+        <cols>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk] * [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:product_77AE717F8960428EB39368D4A5BF3D98:qk])</cols>
+      </table>
+      <simple-id uuid='{03A40499-EF4E-4B4F-941C-CB6B5C51ED4A}' />
+    </worksheet>
+    <worksheet name='nodif'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>No preference</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[catdog]' derivation='None' name='[none:catdog:nk]' pivot='key' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]'>
+            <groupfilter from='&quot;cat&quot;' function='range' level='[none:catdog:nk]' to='&quot;none&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;beis&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;blanco&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;naranja&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camisa&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;casacas sanitarias&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaleco&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaqueta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;falda&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;lenceria&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;mallas&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;pantalones&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;top&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{E8366F03-A213-4233-A76B-B4F49C1BFF6B}' />
+    </worksheet>
+    <worksheet name='none'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[catdog]' derivation='None' name='[none:catdog:nk]' pivot='key' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]'>
+            <groupfilter from='&quot;cat&quot;' function='range' level='[none:catdog:nk]' to='&quot;none&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='member' level='[none:colour:nk]' member='&quot;amarillo&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camisa&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;casacas sanitarias&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaleco&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaqueta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;falda&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;lenceria&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;mallas&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;pantalones&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;top&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{5E113DAF-7B27-49C3-8855-9B2A66D7798B}' />
+    </worksheet>
+    <worksheet name='not_dog'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Afraid of Dogs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Catdog' datatype='string' name='[catdog]' role='dimension' type='nominal' />
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[catdog]' derivation='None' name='[none:catdog:nk]' pivot='key' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]'>
+            <groupfilter from='&quot;cat&quot;' function='range' level='[none:catdog:nk]' to='&quot;none&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;rojo&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;turquesa&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camisa&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;casacas sanitarias&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaleco&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;chaqueta&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;falda&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;lenceria&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;mallas&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;pantalones&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;top&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:catdog:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{B77DFCD4-D7EB-4B1C-BBE8-66E522E9AB9E}' />
+    </worksheet>
+    <worksheet name='province_color'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sales by Color and by Spanish Province</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;amarillo&quot;' function='range' level='[none:colour:nk]' to='&quot;blanco&quot;' />
+              <groupfilter from='&quot;gris&quot;' function='range' level='[none:colour:nk]' to='&quot;negro&quot;' />
+              <groupfilter from='&quot;rojo&quot;' function='range' level='[none:colour:nk]' to='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;alava&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;albacete&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;alicante&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;almeria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;asturias&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;avila&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;badajoz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;baleares&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;barcelona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;bizkaia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;burgos&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;caceres&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cadiz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cantabria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;castellon&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;ciudad_real&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cordoba&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cuenca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gerona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gipuzkoa&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;granada&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;guadalajara&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;huelva&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;huesca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;jaen&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;la_coruna&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;la_rioja&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;las_palmas&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;leon&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;lleida&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;lugo&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;madrid&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;malaga&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;murcia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;navarra&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;orense&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;palencia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;pontevedra&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;salamanca&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;santa_cruz_de_tenerife&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;segovia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;sevilla&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;soria&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;tarragona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;teruel&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;toledo&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;valencia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;valladolid&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;zamora&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;zaragoza&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' />
+              <text column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+              <text column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' />
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{68F6BDF6-9E90-44B0-9069-0FB9E817CD38}' />
+    </worksheet>
+    <worksheet name='province_color (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>% Sales by Color and by Spanish Province</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[pcto:sum:price_pack:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;amarillo&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;azul&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;blanco&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;morado&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;naranja&quot;' />
+              <groupfilter function='member' level='[none:colour:nk]' member='&quot;negro&quot;' />
+              <groupfilter from='&quot;rojo&quot;' function='range' level='[none:colour:nk]' to='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;albacete&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;avila&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;badajoz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cadiz&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;ciudad_real&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;cordoba&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;gerona&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;orense&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;toledo&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;camiseta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' member-value='&quot;amarillo&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[pcto:sum:price_pack:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[pcto:sum:price_pack:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+              <size column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[pcto:sum:price_pack:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</cols>
+      </table>
+      <simple-id uuid='{C96F9934-1FF6-40F2-B1CA-22861D58CCAA}' />
+    </worksheet>
+    <worksheet name='vestidos'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Dress price by color</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+            <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+            <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Price Pack' datatype='real' name='[price_pack]' role='measure' type='quantitative' />
+            <column-instance column='[price_pack]' derivation='Sum' name='[sum:price_pack:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;amarillo&quot;' function='range' level='[none:colour:nk]' to='&quot;blanco&quot;' />
+              <groupfilter from='&quot;gris&quot;' function='range' level='[none:colour:nk]' to='&quot;negro&quot;' />
+              <groupfilter from='&quot;rojo&quot;' function='range' level='[none:colour:nk]' to='&quot;verde&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;vestido&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]</column>
+            <column>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk] / [federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk])</rows>
+        <cols>[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[sum:price_pack:qk]</cols>
+      </table>
+      <simple-id uuid='{2A43E962-6FD7-4E7E-AA0E-C7B80FADB6DC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='ANIMALS'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='37625' id='3' name='cat' w='27400' x='3000' y='45000' />
+        <zone h='44250' id='10' name='dog' w='63800' x='15800' y='500'>
+          <layout-cache fixed-size-h='359' type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone h='37500' id='11' name='not_dog' w='29500' x='35600' y='45000' />
+        <zone h='41000' id='14' name='nodif' w='29800' x='69900' y='44500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='36' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='35' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='44250' id='10' is-fixed='true' name='dog' w='63800' x='15800' y='500'>
+                  <layout-cache fixed-size-h='359' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41000' id='14' is-fixed='true' name='nodif' w='29800' x='69900' y='44500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37625' id='3' is-fixed='true' name='cat' w='27400' x='3000' y='45000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37500' id='11' is-fixed='true' name='not_dog' w='29500' x='35600' y='45000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{344C7E6F-0DD9-4237-8801-69B3C76D803E}' />
+    </dashboard>
+    <dashboard name='DESS_TSHIRT'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='64250' id='3' name='vestidos' w='40900' x='3300' y='4125' />
+        <zone h='64250' id='4' name='camisetas' w='43600' x='49100' y='4750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='19' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='64250' id='3' is-fixed='true' name='vestidos' w='40900' x='3300' y='4125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='64250' id='4' is-fixed='true' name='camisetas' w='43600' x='49100' y='4750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2D188F18-8BA4-413B-AACF-2E6E8E1CC46E}' />
+    </dashboard>
+    <dashboard name='HOROSCOPE'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='customer+ (color)' name='federated.1rtyosl1t4pgjn19zs6hu0os8li8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rtyosl1t4pgjn19zs6hu0os8li8'>
+        <column caption='Colour' datatype='string' name='[colour]' role='dimension' type='nominal' />
+        <column caption='Horoscope' datatype='string' name='[horoscope]' role='dimension' type='nominal' />
+        <column-instance column='[colour]' derivation='None' name='[none:colour:nk]' pivot='key' type='nominal' />
+        <column-instance column='[horoscope]' derivation='None' name='[none:horoscope:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='40500' id='3' name='horoscope' w='54300' x='2900' y='10000' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='36250' id='4' name='horoscope' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' w='16000' x='58300' y='10625' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='45750' id='5' name='horoscope' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' w='16000' x='75000' y='10750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='10' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='36250' id='4' mode='checkdropdown' name='horoscope' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' w='16000' x='58300' y='10625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='45750' id='5' mode='checkdropdown' name='horoscope' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' w='16000' x='75000' y='10750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40500' id='3' is-fixed='true' name='horoscope' w='54300' x='2900' y='10000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2B465F86-8A76-4E2E-B53B-1275E9556CF2}' />
+    </dashboard>
+    <dashboard name='province'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='77750' id='3' name='province_color' w='83100' x='5100' y='6250' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='458' h='39750' id='8' is-fixed='true' name='province_color' pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' w='14000' x='76200' y='16000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='14' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='13' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='77750' id='3' is-fixed='true' name='province_color' w='83100' x='5100' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='458' h='39750' id='8' name='province_color' pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' w='14000' x='76200' y='16000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EC7E27B4-7557-4881-A95E-10F44A913B42}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='48'>
+    <window class='worksheet' name='province_color'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{62F59F69-C679-4125-881D-7B7F40140122}' />
+    </window>
+    <window class='worksheet' name='province_color (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[pcto:sum:price_pack:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E0D3BA0-BDCB-4BBF-9392-32213050035E}' />
+    </window>
+    <window class='worksheet' name='vestidos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1A305D3-97CC-479E-BD40-3B44FD425DBC}' />
+    </window>
+    <window class='worksheet' name='camisetas'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B504B50-C9CD-4857-BD0D-83349E55D364}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16FA835D-0A5E-4BEB-8F19-B4DB4E8033AD}' />
+    </window>
+    <window class='worksheet' name='euskadi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BFAB595-C1A5-40D7-8520-91AB1145504C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='andalucia'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:location:nk]' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[__tableau_internal_object_id__].[cnt:sale_0E6C56B8BAED49998BB376A2EFEDF915:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{401EDC3A-6A71-4608-AFB7-9B81AB39BC8B}' />
+    </window>
+    <window class='worksheet' name='horoscope'>
+      <cards>
+        <edge name='left'>
+          <strip size='208'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:horoscope:nk]' size='257' type='filter' />
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' size='127' type='filter' />
+            <card pane-specification-id='2' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' size='101' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC1A8D7A-EE96-4B39-9AF8-5DDD6FE17D79}' />
+    </window>
+    <window class='worksheet' name='brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='212'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8BCA29FA-E0EA-48DC-AEFE-50C9461475F0}' />
+    </window>
+    <window class='worksheet' name='brand_blood'>
+      <cards>
+        <edge name='left'>
+          <strip size='212'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:brand:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:blood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33302B3B-402D-4CE9-9B30-324CF40A8F08}' />
+    </window>
+    <window class='worksheet' name='dog'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F85E608C-127F-4927-AD98-B99EED1A195B}' />
+    </window>
+    <window class='worksheet' name='cat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83AC1982-58D8-43DE-B5BD-54B180EFE112}' />
+    </window>
+    <window class='worksheet' name='not_dog'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F50C920B-50A7-4BB7-B103-0760DDF87C81}' />
+    </window>
+    <window class='worksheet' name='none'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC20778-FB18-4A73-8CF7-3235C9EC210C}' />
+    </window>
+    <window class='worksheet' name='nodif'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rtyosl1t4pgjn19zs6hu0os8li8].[none:colour:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5338BF8-D0DE-46DD-B646-426225D47E97}' />
+    </window>
+    <window class='dashboard' name='province'>
+      <viewpoints>
+        <viewpoint name='province_color'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{FA47DEC5-C72C-41BC-9F34-A47E55AE2E7D}' />
+    </window>
+    <window class='dashboard' name='DESS_TSHIRT'>
+      <viewpoints>
+        <viewpoint name='camisetas' />
+        <viewpoint name='vestidos' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{578BA72A-7C28-4FBE-B2CC-6870D57F6551}' />
+    </window>
+    <window class='dashboard' name='ANIMALS'>
+      <viewpoints>
+        <viewpoint name='cat' />
+        <viewpoint name='dog' />
+        <viewpoint name='nodif' />
+        <viewpoint name='not_dog' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{67C178BD-2967-40DA-BD3A-12761A6D0E6D}' />
+    </window>
+    <window class='dashboard' name='HOROSCOPE'>
+      <viewpoints>
+        <viewpoint name='horoscope' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CDFE69BE-D56E-45D9-873F-9FB1A285E43B}' />
+    </window>
+  </windows>
+</workbook>
