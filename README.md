@@ -23,23 +23,22 @@ Our client, an eccentric enterprise with passion for `astrology and animal advoc
 
 ## Our methodology to success
 
-1. `load additional data` using ASOS API for other types of clothes (top, sweater, dress ... ) <br/>
+1. `Load additional data` using ASOS API for other types of clothes (top, sweater, dress ... ) <br/>
     [1-API_ASOS_extract2](notebooks/1-API_ASOS_extract2.ipynb) <br/>
 
-2. `clean and transform` the data: <br/>
+2. `Clean and transform` the data: <br/>
     [2-API_ASOS_transform2](notebooks/2-API_ASOS_transform2.ipynb) <br/>
     [3-transform_load2](notebooks/3-transform_load2.ipynb)  <br/>
 
-3. `perform an EDA` to check the data quality and get the first clues on the dataset <br/>
+3. `Perform an EDA` to check the data quality and get the first clues on the dataset <br/>
     [4-womentshirt_EDA](notebooks/4-womentshirt_EDA.ipynb)  <br/>
 
-3. `create a dashboard` to present to the client our insights <br/>
-    TABLEAU  <br/>
-
+3. `Create a dashboard` to present to the client our insights <br/>
+    [dashboard/colors.twb](dashboard/colors.twb)   <br/>
 
 
 <details>
-<summary> GO TO: Data exploration, first insights:<a name="clean1"></a></summary>
+<summary> <font color="green"> GO TO: Data exploration, first insights:</font><a name="clean1"></a></summary>
 <br>
 
 ## How much data have we collected??
@@ -91,7 +90,7 @@ Without further evaluating and filtering the outliers out, the two shops present
 <summary> GO TO: Data analysis, Best-Sellers: <a name="clean1"></a></summary>
 <br>
 
-Tableau dashboards are available at: [colors.twb](colors.twb) 
+Tableau dashboards are available at: [dashboard/colors.twb](dashboard/colors.twb) 
 
 ## Spanish Provinces
 
