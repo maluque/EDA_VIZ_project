@@ -38,7 +38,8 @@ Our client, an eccentric enterprise with passion for `astrology and animal advoc
 
 
 <details>
-<summary> <font color="green"> GO TO: Data exploration, first insights:</font><a name="clean1"></a></summary>
+<summary> GO TO: Data exploration, first insights:<a name="clean1"></a></summary>
+
 <br>
 
 ## How much data have we collected??
@@ -145,9 +146,15 @@ The clothing color preferences according to the customers' horoscope also reveal
 
 </details>
 
-Our market research focused on understanding of customer preferences and according to their horoscope, pet preferences and residence providing valuable insights for our client **`AstroPaws Co.`**
+<br>
 
- Our thorough analysis revealed significant trends in customer behavior, `guiding strategic decisions for product placement` and marketing strategies.
+of our customer preferences and according to the data;
+## Main conclusions
+
+Our market research focused on the understanding of the relation between the clothing color preferences and the customers' horoscope, pet interest and province of residence.
+
+Our thorough analysis revealed significant trends in customer behavior, `guiding strategic decisions for marketing placement`
+for our client **`AstroPaws-Co`**.
 
 <br>
 
