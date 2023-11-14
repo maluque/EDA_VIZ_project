@@ -7,12 +7,13 @@ This project is a continuation from the `ETL_project` available at: **https://gi
 ![intro](images/intro.jpg)
 
 
-In the ever-evolving landscape of e-commerce, our consulting company has embarked on an exciting new data analysis project with a unique twist.
+In the ever-evolving landscape of e-commerce, our consulting company has receibed an exciting new data analysis project with a unique twist.
 
-Our client, an eccentric enterprise with passion for `astrology and animal advocacy`, has envisioned the creation of an intermediary online clothing store, named **`AstroPaws Co.`**. The store will specialize in offering a curated selection of `women's t-shirts and dresses` sourced from two distinct realms: the vast marketplace of `Amazon` and the trendy offerings from various brands available on the `ASOS` website.
+Our client, an eccentric enterprise with passion for `astrology and animal advocacy`, has envisioned the creation of an intermediary online clothing store, named **`AstroPaws Co.`** The store will specialize in offering a curated selection of `women's t-shirts and dresses` sourced from `Amazon` marketplace and the various brands available on the `ASOS` website.
 
 
-**Our mission is clear:** delve into the data to `identify the best-selling clothing` items that `resonate with` individuals who share a similar passion for `astrology` and an appreciation for `animal rights`.
+### **Our mission:** <br/>
+We will delve into the data to `identify the best-selling clothing` items that `resonate with` individuals who share the passion for `astrology` and have appreciation for `animal rights`.
 
 <br/>
 
@@ -33,12 +34,14 @@ Our client, an eccentric enterprise with passion for `astrology and animal advoc
 3. `Perform an EDA` to check the data quality and get the first clues on the dataset <br/>
     [4-womentshirt_EDA](notebooks/4-womentshirt_EDA.ipynb)  <br/>
 
-3. `Create a dashboard` to present to the client our insights <br/>
+3. `Create a dashboard` to present our insights to the client<br/>
     [dashboard/colors.twb](dashboard/colors.twb)   <br/>
+<br>
 
+--------------
 
 <details>
-<summary> GO TO: Data exploration, first insights:<a name="clean1"></a></summary>
+<summary> GO TO: Data exploration<a name="clean1"></a></summary>
 
 <br>
 
@@ -61,7 +64,7 @@ AWZ dataset collects products from `1320 brands while ASOS 365`. Both collect cl
 
 ## Price distribution
 
-Without further evaluating and filtering the outliers out, the two shops present a similar price distribution.
+The two shops present a similar price distribution.
 
 <div style="border: 4px solid white; padding: 0px;">
     <img src="images/price_hist1.png" alt="Your Image Description" />
@@ -88,7 +91,7 @@ Without further evaluating and filtering the outliers out, the two shops present
 
 
 <details>
-<summary> GO TO: Data analysis, Best-Sellers: <a name="clean1"></a></summary>
+<summary> GO TO: Data analysis <a name="clean1"></a></summary>
 <br>
 
 Tableau dashboards are available at: [dashboard/colors.twb](dashboard/colors.twb) 
